@@ -4,7 +4,7 @@ pipeline {
     environment {
         K6_API_TOKEN=credentials("K6_API_TOKEN")
         K6_CLOUD_PROJECT_ID=credentials("K6_CLOUD_PROJECT_ID")
-        K6_API_TOKEN='a65240acfa1a7d0ad6ae0e7d86a4ea6536570c0e74571d2d6c479c857cde41fa'
+      
     }
     stages {
         stage('Performance Testing') {
