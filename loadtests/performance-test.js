@@ -8,6 +8,6 @@ export let options = {
 };
 
 export default function() {
-  http.get('http://35.235.127.18');
+  http.get('http://test.k6.io/contacts.php');
   sleep(3);
 };
