@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        K6_API_TOKEN=credentials("K6_API_TOKEN")
-        K6_CLOUD_PROJECT_ID=credentials("K6_CLOUD_PROJECT_ID")
+        $K6_API_TOKEN=credentials("K6_API_TOKEN")
+        $K6_CLOUD_PROJECT_ID=credentials("K6_CLOUD_PROJECT_ID")
       
     }
     stages {
         stage('Performance Testing') {
             steps {
-                echo 'credentials("K6_API_TOKEN")'
+                echo '$K6_API_TOKEN'
                 echo 'Running K6 performance tests...'
                 sh 'sudo chmod +x setup_k6.sh'
                 //sh 'sudo ./setup_k6.sh'
