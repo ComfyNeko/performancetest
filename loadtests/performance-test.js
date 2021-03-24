@@ -2,7 +2,7 @@ import { sleep } from"k6";
 import http from "k6/http";
 
 export let options = {
-  duration: "0.30m",
+  duration: "30s",
   vus: 50,
  
 };
