@@ -3,7 +3,7 @@ import http from "k6/http";
 
 export let options = {
   duration: "30s",
-  vus: 500,
+  vus: 100,
  
 };
 
