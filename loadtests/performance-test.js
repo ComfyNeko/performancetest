@@ -8,6 +8,6 @@ export let options = {
 };
 
 export default function() {
-  http.get('http://test.k6.io/contacts.php');
+  http.get('http://34.82.204.218/Admin/quizzie.php');
   sleep(3);
 };
